@@ -1,2 +1,13 @@
-# visionguard-system
-VisionGuard AI PC + FPGA smart vision tracking system: complete project archive and reproduction instructions
+# VisionGuard
+
+基于 AMD AI PC 与 ZCU104 的视觉跟踪和值守系统，涵盖 PC 应用、PS/PL 工程、FPGA 构建、可复用工作流以及设计报告和日志证据。
+
+请从 [最新 Release](https://github.com/lxjing167/visionguard-system/releases/latest) 下载 `visionguard_git.zip`、校验文件和元数据。ZIP 按用户原文件发布；解压后先阅读根目录 `README.md`，其中包含项目简介与全系统复现步骤。
+
+归档大小为 1,175,758,761 字节，SHA256 为：
+
+```text
+9b1ae8e29df040a39ae8a034e54fe9655d8f8acf3bda3a6aa775872891baffc9
+```
+
+资源边界：内附 ROCm SDK 目录缺少 3 个 `.kpack` 文件（BLAS、FFT、RAND），需另取完整 `visionguard_rocm714_resources.zip`；管理资源 `visionguard_management_resources.zip` 也为独立资源包。模型、推理运行包、匹配驱动、Vivado 和 SD Linux 依赖按 ZIP 根 README 准备。本归档不是自包含的完整运行环境。
