@@ -9,5 +9,3 @@
 ```text
 9b1ae8e29df040a39ae8a034e54fe9655d8f8acf3bda3a6aa775872891baffc9
 ```
-
-资源边界：内附 ROCm SDK 目录缺少 3 个 `.kpack` 文件（BLAS、FFT、RAND），需另取完整 `visionguard_rocm714_resources.zip`；管理资源 `visionguard_management_resources.zip` 也为独立资源包。模型、推理运行包、匹配驱动、Vivado 和 SD Linux 依赖按 ZIP 根 README 准备。本归档不是自包含的完整运行环境。
